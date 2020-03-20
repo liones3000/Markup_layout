@@ -135,6 +135,10 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 30px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .text-green {
     color: #27DEBF !important;
 }
@@ -146,8 +150,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .gradient-bg {
     background: linear-gradient(
     to right, 
-    #F6F7FC 0%, 60%, 
-    #00C6FF 60%, 
+    #F6F7FC 0px, 58%, 
+    #00C6FF 58%, 
     #0072ff 100%
     );
 }
@@ -188,6 +192,42 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 30px 50px;
 }
 
+.score-screen-content {
+    width: 819px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 60px;
+    color: #29375A;
+}
+
+.score-count {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.score-count sub{
+    font-size: 5.14rem;
+    font-weight: 700;
+    color: #01BFFF;
+}
+
+.score-count sup {
+    line-height: 1.71;
+    color: #BBC4DA;
+    position: absolute;
+    top: 8px;
+}
+
+.score-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.57rem;
+}
+
+.score-checkbox-group-list {
+    
+}
+
 .process-logo {
     margin-bottom: 30px;
 }
@@ -197,6 +237,16 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #29375A;
     font-weight: 400;
     margin-bottom: 35px;
+}
+
+.proccess-desc {
+    max-width: 340px;
+    color: #29375A;
+    line-height: 1.71;
+}
+
+.proccess-desc + span {
+    line-height: 1.71;
 }
 
 .action-form .form-control{
@@ -217,7 +267,18 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
-.process-steps {
+.before-screen-link::before {
+    content: '';
+    width: 20px;
+    height: 9px;
+    background: url('../img/arrow.svg') no-repeat;
+    background-size: contain;
+    transform: scaleX(-1);
+    margin-right: 10px;
+}
+
+.process-steps,
+.aside-right-menu {
     padding-left: 50px;
     width: 290px;
 }
@@ -259,6 +320,11 @@ p, h1, h2, h3, h4, h5, h6 {
 .list-item-num.active {
     background-color: #27DEBF;
     color: #fff;
+}
+
+.list-item-num.success {
+    color: transparent;
+    background: url(../img/success.svg) no-repeat center #F6F7FC;
 }
 
 .list-item-title {
