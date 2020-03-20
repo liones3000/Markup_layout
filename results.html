@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/me.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -39,46 +39,121 @@
                         <!-- /.score-count -->
                         <p class="score-title">MailGenius Score</p>
                         <p class="score-desc">We’ve found 2 things you can do to avoid landing in the spam folder and increase security.</p>
-                        <div class="score-checkbox-group-list d-flex">
-                            <div class="score-checkbox-item">
-                                <input type="checkbox" name="" id="attention">
-                                <label for="attention"><i class="icon-attention"></i> 2 Things to fix</label>
+                        <div class="checkbox-desc">
+                            <div class="score-checkbox-group-list d-flex">
+                                <div class="score-checkbox-item">
+                                    <input type="checkbox" name="" id="attention">
+                                    <label for="attention"><i class="icon-attention"></i> 2 Things to fix</label>
+                                </div>
+                                <div class="score-checkbox-item">
+                                    <input type="checkbox" name="" id="like">
+                                    <label for="like"><i class="icon-like"></i> 11 Passing tests</label>
+                                </div>
+                                <div class="score-checkbox-item">
+                                    <input type="checkbox" name="" id="envelope">
+                                    <label for="envelope"><i class="icon-envelope"></i> Email preview</label>
+                                </div>
                             </div>
-                            <div class="score-checkbox-item">
-                                <input type="checkbox" name="" id="like">
-                                <label for="like"><i class="icon-like"></i> 11 Passing tests</label>
+                            <!-- /.score-checkbox-group-list -->
+                            <div class="small-text d-flex justify-content-beetween">
+                                <span>Sorted by: Important</span>
+                                <span>Share these results: <a href="#" class="text-green">mailgenius.com/spam-test/example-1</a> </span>
                             </div>
-                            <div class="score-checkbox-item">
-                                <input type="checkbox" name="" id="envelope">
-                                <label for="envelope"><i class="icon-envelope"></i> Email preview</label>
-                            </div>
+                            <!-- /.score-footer -->
                         </div>
-                        <!-- /.score-checkbox-group-list -->
-                        <div class="score-footer">
-                            <span>Sorted by: Important</span>
-                            <span>Share these results: <span class="text-green">mailgenius.com/spam-test/example-1</span> </span>
-                        </div>
-                        <!-- /.score-footer -->
+                        <!-- /.checkbox-desc -->
                         <div class="step-item">
-                            <div class="step-item-title">Could be Better - Your email is missing the List-Unsubscribe header.</div>
+                            <div class="step-item-title bg-neutral d-flex align-items-center">
+                                <img src="img/neutral-icon.svg" alt="">
+                                <h3 class="step-item-desc">Could be Better - Your email is missing the List-Unsubscribe header.</h3>
+                            </div>
                             <!-- /.step-item-title -->
-                            <div class="step-item-content">
-                                <span>Severity of this problem: Low</span>
-                                <span>Estimated time for you to fix it: 120 minutes</span>
-                                <h3>Why is this important?</h3>
-                                <p>Spam complaints are the #1 factor that will hurt your email deliverability. Including an easy unsubscribe mechanism effectively helps prevent these spam complaints. Email Service Providers and spam filters also view it favorably when they make inboxing decisions.</p>
-                                <h3>Problems you can fix:</h3>
-                                <h4>(-1 points) There is no List-Unsubscribe header.</h4>
-                                <span class="small-text">Solution:</span>
-                                <!-- /.small-text -->
-                                <p>Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
+                            <div class="step-container">
+                                <div class="step-item-content">
+                                    <div class="content-reported">
+                                        <p>Severity of this problem: <span class="text-bold">Low</span></p>
+                                        <p>Estimated time for you to fix it: <span class="text-bold">120 minutes</span></p>
+                                    </div>
+                                    <!-- /.content-reported -->
+                                    <h3 class="step-content-title">Why is this important?</h3>
+                                    <p class="step-content-desc">Spam complaints are the #1 factor that will hurt your email deliverability. Including an easy unsubscribe mechanism effectively helps prevent these spam complaints. Email Service Providers and spam filters also view it favorably when they make inboxing decisions.</p>
+                                    <h3 class="step-content-title">Problems you can fix:</h3>
+                                    <h4 class="step-fix text-green">(-1 points) There is no List-Unsubscribe header.</h4>
+                                    <span class="small-text">Solution:</span>
+                                    <p class="step-content-desc">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
+                                </div>
+                                <!-- /.step-item-content -->
+                                <div class="group-button">
+                                    <button class="btn btn-results text-green">Learn more about list-unsubscribe header</button>
+                                    <button class="btn btn-results text-green">Get help fixing this</button>
+                                </div>
+                                <!-- /.group-button -->
                             </div>
-                            <!-- /.step-item-content -->
-                            <div class="group-button">
-                                <button>Learn more about list-unsubscribe header</button>
-                                <button>Get help fixinf this</button>
+                            <!-- /.step-container -->
+                        </div>
+                        <!-- /.step-item -->
+                        <div class="step-item">
+                            <div class="step-item-title bg-grinning d-flex align-items-center">
+                                <img src="img/grinning-icon.svg" alt="">
+                                <h3 class="step-item-desc">Good - Your email is missing the List-Unsubscribe header.</h3>
                             </div>
-                            <!-- /.group-button -->
+                            <!-- /.step-item-title -->
+                            <div class="step-container">
+                                <div class="step-item-content">
+                                    <div class="content-reported">
+                                        <p>Severity of this problem: <span class="text-bold"> Low</span></p>
+                                        <p>Estimated time for you to fix it: <span class="text-bold"> 30 minutes </span></p>
+                                    </div>
+                                    <!-- /.content-reported -->
+                                    <h3 class="step-content-title">Why is this important?</h3>
+                                    <p class="step-content-desc">Without having a Requested Mail Receiver DMARC policy published, emails from your domain can be spoofed and sent on your behalf.</p>
+                                    <h3 class="step-content-title">Problems you can fix:</h3>
+                                    <h4 class="step-fix text-green">(-1 points) Your DMARC record policy is set to none.</h4>
+                                    <span class="small-text">Solution:</span>
+                                    <p class="step-content-desc">You may want to set your DMARC record to have a policy of reject or quarantine. A policy of none results in no action when an email from your domain fails the DMARC mechanism, allowing spoofers to act more freely.</p>
+                                    <p class="step-content-desc">Before making this change it is important to understand that a policy other than none can result in legitimate email being sent to spam. If anyone sending from this domain fails an Email Service Provider's DMARC check, only a none policy will allow the mail to reach to the inbox. This also includes anyone who is fraudulently sending from this domain. This is why it is important to make sure your DMARC, DKIM, & SPF authentication is properly setup for all senders of your domain including all email tools you are using before employing a stricter policy of either reject or quarantine.</p>
+                                    <p class="step-content-desc">Existing DNS Records:</p>
+                                    <p class="mono-space">_dmarc.gmail.com. 60 IN TXT v=DMARC1; p=none; sp=quarantine; rua=mailto:mailauth-reports@google.com</p>
+                                    <p class="step-content-desc">Note: You can only edit these records when sending from a custom domain.</p>
+                                </div>
+                                <!-- /.step-item-content -->
+                                <div class="group-button">
+                                    <button class="btn btn-results text-green">Learn more about dmarc</button>
+                                    <button class="btn btn-results text-green">Get help fixing this</button>
+                                </div>
+                                <!-- /.group-button -->
+                            </div>
+                            <!-- /.step-container -->
+                        </div>
+                        <!-- /.step-item -->
+                        <div class="step-item">
+                            <div class="step-item-title bg-sad d-flex align-items-center">
+                                <img src="img/sad-icon.svg" alt="">
+                                <h3 class="step-item-desc">Badly - Your email is missing the List-Unsubscribe header.</h3>
+                            </div>
+                            <!-- /.step-item-title -->
+                            <div class="step-container">
+                                <div class="step-item-content">
+                                    <div class="content-reported">
+                                        <p>Severity of this problem: <span class="text-bold"> Low</span></p>
+                                        <p>Estimated time for you to fix it: <span class="text-bold"> 120 minutes </span></p>
+                                    </div>
+                                    <!-- /.content-reported -->
+                                    <h3 class="step-content-title">Why is this important?</h3>
+                                    <p class="step-content-desc">Spam complaints are the #1 factor that will hurt your email deliverability. Including an easy unsubscribe mechanism effectively helps prevent these spam complaints. Email Service Providers and spam filters also view it favorably when they make inboxing decisions.</p>
+                                    <h3 class="step-content-title">Problems you can fix:</h3>
+                                    <h4 class="step-fix text-green">(-1 points) There is no List-Unsubscribe header.</h4>
+                                    <span class="small-text">Solution:</span>
+                                    <p class="step-content-desc">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
+                                </div>
+                                <!-- /.step-item-content -->
+                                <div class="group-button">
+                                    <button class="btn btn-results text-green">Learn more about list-unsubscribe header</button>
+                                    <button class="btn btn-results text-green">Get help fixinf this</button>
+                                </div>
+                                <!-- /.group-button -->
+                            </div>
+                            <!-- /.step-container -->
                         </div>
                         <!-- /.step-item -->
                     </div>
@@ -86,7 +161,28 @@
                 </div>
                 <!-- /.score-screen-content -->
                 <aside class="aside-right-menu">
-                    right-menu
+                    <nav class="fixed-menu">
+                        <ul class="fixed-menu-list">
+                            <li class="fixed-menu-item"><a href="#">Helpful Links</a></li>
+                            <li class="fixed-menu-item"><a href="#">Live Chat</a></li>
+                            <li class="fixed-menu-item"><a href="#">Partners & Discounts</a></li>
+                            <li class="fixed-menu-item"><a href="#">Free 15 Minute Call</a></li>
+                        </ul>
+                        <button class="fixed-btn btn gradient-btn">New email test</button>
+                        <a class="fixed-logo" href="#"><img src="img/neverbounce.png" alt=""></a>
+                        <div class="fixed-menu-footer-text">
+                            <ul>
+                                <li class="fixed-footer-text">
+                                    <a href="#">Pro Tip: Always verify your email lists.</a>
+                                </li>
+                                <li class="fixed-footer-text">
+                                    <a class="text-green text-bold" href="#">10% discount on NeverBounce</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.fixed-menu-footer-text -->
+                    </nav>
+                    <!-- /.fixed-menu -->
                 </aside>
                 <!-- /.right-menu -->
             </div>
