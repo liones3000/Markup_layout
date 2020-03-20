@@ -32,18 +32,26 @@
         <section class="score-screen">
             <div class="container d-flex">
                 <div class="score-screen-content">
-                    <div class="score-screen-body">
+                    <div class="score-screen-body d-flex flex-column align-items-center">
                         <div class="score-count text-center">
                             <sub>98</sub><sup>/100</sup>
-                            <p class="score-title">MailGenius Score</p>
-                            <p class="score-desc">We’ve found 2 things you can do to avoid landing in the spam folder and increase security.</p>
                         </div>
                         <!-- /.score-count -->
-                        <div class="score-checkbox-group-list">
-                            checkbox
-                            <i class="icon-attention"></i>
-                            <i class="icon-like"></i>
-                            <i class="icon-envelope"></i>
+                        <p class="score-title">MailGenius Score</p>
+                        <p class="score-desc">We’ve found 2 things you can do to avoid landing in the spam folder and increase security.</p>
+                        <div class="score-checkbox-group-list d-flex">
+                            <div class="score-checkbox-item">
+                                <input type="checkbox" name="" id="attention">
+                                <label for="attention"><i class="icon-attention"></i> 2 Things to fix</label>
+                            </div>
+                            <div class="score-checkbox-item">
+                                <input type="checkbox" name="" id="like">
+                                <label for="like"><i class="icon-like"></i> 11 Passing tests</label>
+                            </div>
+                            <div class="score-checkbox-item">
+                                <input type="checkbox" name="" id="envelope">
+                                <label for="envelope"><i class="icon-envelope"></i> Email preview</label>
+                            </div>
                         </div>
                         <!-- /.score-checkbox-group-list -->
                         <div class="score-footer">
@@ -87,18 +95,18 @@
         <!-- /.process-screen -->
     </main>
     <!-- /.main -->
-                <footer class="footer">
-                    <div class="container d-flex align-items-center">
-                        <a href="">
-                            <img src="img/footer-logo.png" alt="">
-                        </a>
-                        <div class="footer-text d-flex flex-column">
-                            <span>Pro Tip: Always verify your email lists.</span>
-                            <span class="text-bold">10% discount on NeverBounce</span>
-                        </div>
-                    </div>
-                    <!-- /.container -->
-                </footer>
-                <!-- /.footer -->
+    <footer class="footer">
+        <div class="container d-flex align-items-center">
+            <a href="">
+                <img src="img/footer-logo.png" alt="">
+            </a>
+            <div class="footer-text d-flex flex-column">
+                <span>Pro Tip: Always verify your email lists.</span>
+                <span class="text-bold">10% discount on NeverBounce</span>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>
