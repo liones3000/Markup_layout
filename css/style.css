@@ -28,6 +28,7 @@ button {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    outline: none;
 }
 
 input, textarea {
@@ -259,6 +260,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .score-checkbox-group-list input{
     display: none;
+}
+
+.score-checkbox-item {
+    width: 160px;
 }
 
 .score-checkbox-item label {
