@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -14,6 +15,7 @@
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
+            <div class="header-nav d-flex">
             <nav class="main-header-nav">
                 <a href="#">Email Consulting</a>
                 <a href="#">Contact Us</a>
@@ -23,6 +25,7 @@
                 <a href="#">Privacy Policy</a>
                 <a href="#">Disclaimer</a>
             </nav>
+            </div>
             <!-- /.main-menu-right -->
         </div>
         <!-- /.container -->
@@ -30,7 +33,7 @@
     <!-- /.header -->
     <main class="main">
         <section class="score-screen">
-            <div class="container d-flex">
+            <div class="container d-flex justify-content-center">
                 <div class="score-screen-content">
                     <div class="score-screen-body d-flex flex-column align-items-center">
                         <div class="score-count text-center">
@@ -83,7 +86,7 @@
                                     <p class="step-content-desc">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
                                 </div>
                                 <!-- /.step-item-content -->
-                                <div class="group-button">
+                                <div class="group-button d-flex">
                                     <button class="btn btn-results text-green">Learn more about list-unsubscribe header</button>
                                     <button class="btn btn-results text-green">Get help fixing this</button>
                                 </div>
@@ -117,7 +120,7 @@
                                     <p class="step-content-desc">Note: You can only edit these records when sending from a custom domain.</p>
                                 </div>
                                 <!-- /.step-item-content -->
-                                <div class="group-button">
+                                <div class="group-button d-flex">
                                     <button class="btn btn-results text-green">Learn more about dmarc</button>
                                     <button class="btn btn-results text-green">Get help fixing this</button>
                                 </div>
@@ -147,7 +150,7 @@
                                     <p class="step-content-desc">Using an email tool that allows you to alter email headers, add the List-Unsubscribe header with the appropriate mailto and/or link for receivers to unsubscribe with.</p>
                                 </div>
                                 <!-- /.step-item-content -->
-                                <div class="group-button">
+                                <div class="group-button d-flex">
                                     <button class="btn btn-results text-green">Learn more about list-unsubscribe header</button>
                                     <button class="btn btn-results text-green">Get help fixinf this</button>
                                 </div>
@@ -161,7 +164,7 @@
                 </div>
                 <!-- /.score-screen-content -->
                 <aside class="aside-right-menu">
-                    <nav class="fixed-menu">
+                    <nav class="fixed-menu d-flex flex-column">
                         <ul class="fixed-menu-list">
                             <li class="fixed-menu-item"><a href="#">Helpful Links</a></li>
                             <li class="fixed-menu-item"><a href="#">Live Chat</a></li>
@@ -204,5 +207,18 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(function(){
+            $('.header-nav').slicknav({
+                appendTo: '.header .container',
+                label: ''
+            });
+        });
+    </script>
 </body>
 </html>

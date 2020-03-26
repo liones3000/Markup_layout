@@ -184,6 +184,10 @@ p, h1, h2, h3, h4, h5, h6 {
     );
 }
 
+.slicknav_menu {
+    display:none;
+}
+
 .header {
     padding: 40px 0;
     position: absolute;
@@ -191,6 +195,10 @@ p, h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100%;
     z-index: 2;
+}
+
+.header-nav {
+    flex-grow: 1;
 }
 
 .main-header-nav {
@@ -237,7 +245,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .send-emails > .container {
     padding-bottom: 140px;
-    position: relative;
+    /* position: relative; */
 }
 
 .send-email {
@@ -284,9 +292,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .send-mail-img {
-    position: absolute;
-    top: 0;
-    right: -5px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: -5px; */
+    margin-left: -10px;
 }
 
 .footer-email-checker {
@@ -328,8 +337,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ---------------------- */
 
+.process-screen-body {
+    max-width: 380px;
+    width: 100%;
+}
+
 .process-screen-content {
-    width: 819px;
+    max-width: 819px;
+    width: 100%;
     height: 475px;
     background-color: #fff;
     border-radius: 6px;
@@ -337,7 +352,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .score-screen-content {
-    width: 819px;
+    max-width: 819px;
+    width: 100%;
     background-color: #fff;
     border-radius: 6px;
     padding: 60px;
@@ -425,7 +441,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .step-item {
-    width: 700px;
+    max-width: 700px;
 }
 
 .step-item + .step-item {
@@ -484,7 +500,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .group-button .btn-results + .btn-results {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .mono-space {
@@ -505,8 +521,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .fixed-menu {
     position: fixed;
-    top: 106px;
-    right: 242px;
+    /* top: 106px; */
+    /* right: 242px; */
 }
 
 .fixed-menu-list {
@@ -560,7 +576,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .action-form .form-control{
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -590,7 +607,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .process-steps,
 .aside-right-menu {
     padding-left: 50px;
-    width: 290px;
+    max-width: 290px;
+    width: 100%;
 }
 
 .process-steps-title {
@@ -673,3 +691,266 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer-text span:last-child {
     color: #29375A;
 }
+
+.slicknav_btn {
+    background-color: transparent;
+}
+
+.slicknav_btn.slicknav_open + .slicknav_nav{
+    background-color: #4c4c4c;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1090px) {
+    .aside-right-menu {
+        /* display: none; */
+    }
+
+    .fixed-menu {
+        position: initial;
+    }
+
+    .aside-right-menu {
+        color: black;
+        max-width: 819px;
+        padding: 0 20px;
+    }
+
+    .aside-right-menu .fixed-menu  {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fixed-menu-list {
+        margin-top: 20px;
+    }
+
+    .fixed-logo {
+        display: none;
+    }
+
+    .fixed-footer-text, 
+    .fixed-footer-text:first-child {
+        color: inherit;
+    }
+
+    .score-screen .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 991px) {
+    .process-screen .container {
+        flex-wrap: wrap;
+    }
+
+    .process-screen-content, .process-steps {
+        max-width: none;
+    }
+
+    .process-steps {
+        margin-top: 30px;
+    }
+
+    .process-steps-title, .list-item-title, .list-item-desc, .optional-text {
+        color: #000;
+    }
+
+    .list-item-num {
+        left: -50px;
+    }
+
+    .optional-text {
+        max-width: none;
+    }
+
+    .process-screen-content {
+        height: 400px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+/* Мобильные устройства */
+
+@media (max-width: 767px) {
+    .send-email-title {
+        font-size: 2.43rem;
+    }
+    .slicknav_menu {
+        display: block;
+        margin-left: auto;
+        background: none;
+    }
+
+    .container .logo {
+        align-self: flex-start;
+    }
+
+    .header-nav nav{
+        display: none;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .main-header-nav {
+        font-weight: 400;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .info-header-nav {
+        text-align: center;
+    }
+
+    .main-header-nav a + a,
+    .info-header-nav a + a {
+        margin-left: 0;
+    }
+
+    .process-screen-content {
+        height: 375px;
+        padding: 20px;
+    }
+
+    .process-logo {
+        margin-bottom: 20px;
+    }
+
+    .process-title {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+    
+    .main {
+        padding-top: 80px;
+    }
+
+    .score-screen-content {
+        padding: 20px;
+    }
+
+    .step-item-title {
+        text-align: center;
+    }
+
+    .step-item-title,
+    .step-container {
+        padding: 25px 20px;
+    }
+
+    .score-checkbox-item {
+        max-width: none;
+    }
+
+    .egs-header .send-emails > .container {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .send-emails > .container {
+        padding-bottom: 40px;
+    }
+
+    .footer-email-checker {
+        margin-top: 50px;
+    }
+
+    .egs {
+        top: -1280px;
+    }
+
+    .egs-2 {
+    left: 89px;
+    top: 719px;
+    }
+
+    .lists-logo > .list-item-logo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .send-mail-img {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    .egs {
+        top: -1300px;
+    }
+
+    .egs-2 {
+        top: 719px;
+    }
+
+    .score-checkbox-group-list {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .score-checkbox-item {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .score-checkbox-item:nth-child(2) label {
+        border: 1px solid #BBC4DA;
+    }    
+
+    .score-checkbox-item label {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    
+    .egs {
+        top: -1280px;
+    }
+
+    .egs-2 {
+        top: 500px;
+    }
+
+    .slicknav_menu .slicknav_nav a {
+        padding: 5px 1px
+    }
+    .footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .process-steps {
+        padding-left: 35px;
+    }
+
+    .list-item-num {
+        left: -40px;
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .aside-right-menu .fixed-menu,
+    .group-button {
+        flex-direction: column;
+    }
+
+    .group-button .btn-results + .btn-results {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .step-content-title, .score-title {
+        text-align: center;
+    }
+}
+

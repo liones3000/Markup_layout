@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicknav.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -13,15 +14,18 @@
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
-            <nav class="main-header-nav">
-                <a href="#">Email Consulting</a>
-                <a href="#">Contact Us</a>
-            </nav>
-            <!-- /.main-menu-left -->
-            <nav class="info-header-nav">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Disclaimer</a>
-            </nav>
+            <div class="header-nav d-flex">
+                <nav class="main-header-nav">
+                    <a href="#">Email Consulting</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+                <!-- /.main-menu-left -->
+                <nav class="info-header-nav">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a>
+                </nav>
+            </div>
+            <!-- /.header-nav -->
             <!-- /.main-menu-right -->
         </div>
         <!-- /.container -->
@@ -85,5 +89,19 @@
                     <!-- /.container -->
                 </footer>
                 <!-- /.footer -->
+    <!-- SCRIPT -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script>
+      $(function(){
+        $('.header-nav').slicknav({
+            appendTo: '.header .container',
+            label: ''
+        });
+    });
+  </script>
 </body>
 </html>
