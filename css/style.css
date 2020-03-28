@@ -715,9 +715,6 @@ p, h1, h2, h3, h4, h5, h6 {
 /* MEDIA QUERY */
 
 @media (max-width: 1090px) {
-    .aside-right-menu {
-        /* display: none; */
-    }
 
     .fixed-menu {
         position: initial;
