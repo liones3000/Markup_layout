@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/me.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body class="gradient-bg">
-    <header class="header">
+    <header class="header" data-aos="fade-down" data-aos-duration="1000">
         <div class="container d-flex align-items-center">
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
             <div class="header-nav d-flex">
                 <nav class="main-header-nav">
-                    <a href="#">Email Consulting</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#" class="hvr-overline-from-center">Email Consulting</a>
+                    <a href="#" class="hvr-overline-from-center">Contact Us</a>
                 </nav>
                 <!-- /.main-menu-left -->
                 <nav class="info-header-nav">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Disclaimer</a>
+                    <a href="#" class="hvr-overline-from-center">Privacy Policy</a>
+                    <a href="#" class="hvr-overline-from-center">Disclaimer</a>
                 </nav>
             </div>
             <!-- /.header-nav -->
@@ -32,14 +34,14 @@
     </header>
     <!-- /.header -->
     <main class="main">
-        <section class="process-screen">
+        <section class="process-screen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
             <div class="container d-flex align-items-center">
                 <div class="process-screen-content d-flex flex-column">
                     <div class="process-screen-body mx-auto my-auto">
                         <form class="action-form d-flex flex-column align-items-center">
                             <img src="img/click-step-2.svg" alt="" class="process-logo">
                             <h3 class="process-title text-center">After you send the email, click to</h3>
-                            <button formaction="process-step-3.html" type="submit" class="btn gradient-btn">View your test results</button>
+                            <button formaction="process-step-3.html" type="submit" class="btn gradient-btn hvr-wobble-vertical">View your test results</button>
                         </form>
                         <!-- /.action-form -->
                     </div>
@@ -50,7 +52,7 @@
                     <!-- /.process-screen-footer -->
                 </div>
                 <!-- /.process-screen-content -->
-                <div class="process-steps">
+                <div class="process-steps" data-aos="fade-left" data-aos-delay="300"  data-aos-duration="1000">
                     <h4 class="process-steps-title">Run a <span class="text-green">free</span> email spam and security test in 2 easy steps</h4>
                     <ul class="process-steps-list">
                         <li class="steps-list-item">
@@ -74,7 +76,7 @@
         <!-- /.process-screen -->
     </main>
     <!-- /.main -->
-                <footer class="footer">
+                <footer class="footer" data-aos="fade-right" data-aos-delay="600"  data-aos-duration="1000">
                     <div class="container d-flex align-items-center">
                         <a href="">
                             <img src="img/footer-logo.png" alt="">
@@ -90,7 +92,8 @@
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script>
         $(function(){
@@ -99,6 +102,10 @@
                 label: ''
             });
         });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
